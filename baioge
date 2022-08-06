@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #eee;
+    }
+    .flex {
+      display: flex;
+    }
+    .flex1 {
+      flex: 1;
+    }
+    .column {
+      flex-direction: column;
+    }
+    .baise {
+      background-color: white;
+    }
+
+    .shujvqv {
+      flex-direction: column;
+    }
+    .shujv {
+      height: 100px;
+    }
+    .liebiaoxiang {
+      height: 160px;
+    }
+    .yinying {
+      box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+        rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    }
+    .mg8 {
+      margin: 8px;
+    }
+    .mgr8 {
+      margin-right: 8px;
+    }
+    .mgt8 {
+      margin-top: 8px;
+    }
+  </style>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 3" class="flex column baise">
+      <!--侧边头像栏-->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex"
+      >
+        <img
+          src="C:\Users\Lenovo\Pictures\Saved Pictures\微信图片_2022072012333614.jpg"
+          alt="hua"
+          width="40px"
+          height="40px"
+        />
+        <div style="margin-left: 10px"></div>
+      </div>
+      <!--导航栏-->
+    </div>
+    <!--主区域-->
+    <div class="flex flex1 column">
+      <!--头部栏-->
+      <div style="height: 60px; z-index: 3" class="baise yinying"></div>
+      <!--内容区-->
+      <div class="flex flex1" style="overflow: auto">
+        <!--左区-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--数据区-->
+          <div class="flex">
+            <!--四小块-->
+            <div class="shujv baise yinying flex1 mgr8"></div>
+            <div class="shujv baise yinying flex1 mgr8"></div>
+            <div class="shujv baise yinying flex1 mgr8"></div>
+            <div class="shujv baise yinying flex1 mgr8"></div>
+          </div>
+          <!--列表区-->
+          <div class="flex column">
+            <!--列表项-->
+            <div class="liebiaoxiang baise yinying mgt8"></div>
+            <div class="liebiaoxiang baise yinying mgt8"></div>
+            <div class="liebiaoxiang baise yinying mgt8"></div>
+            <div class="liebiaoxiang baise yinying mgt8"></div>
+            <div class="liebiaoxiang baise yinying mgt8"></div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex column mgr8 mgt8">
+          <!--提示区-->
+          <div style="height: 150px" class="baise yinying"></div>
+          <!--消息区-->
+          <div style="height: 300px" class="baise yinying mgt8"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
